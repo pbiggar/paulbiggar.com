@@ -2,7 +2,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
 	<head>
-		<title>TCD CS Paul Biggar</title>
+		<title>Paul Biggar</title>
 		<style type="text/css">
 			h1 { text-align:center; }
 			h2 { text-align:center; }
@@ -75,12 +75,12 @@
 						<td colspan="2">
 							<div class="note">
 								<div style="text-align:center;">
-								Working for Mozilla on SpiderMonkey.
+								Check out <a href="http://circleci.com">Circle</a> - hosted <a href="http://circleci.com">Continuous Integration</a>
 								</div>
 								<ul>
 									<li>Read my <a href="http://blog.paulbiggar.com">blog</a>.</li>
-									<li>Check out my <a href="#wip-phd-dissertation">PhD dissertation on compiling scripting languages</a>.</li>
-									<li>Read my <a href="paulbiggar.pdf">CV</a>.</li>
+									<li>Check out my <a href="#phd-dissertation">PhD dissertation on compiling scripting languages</a>.</li>
+									<li>Read my <a href="http://paulbiggar.com/paulbiggar.pdf">CV</a>.</li>
 									<li>Contact me at <font size="4"><strong>paul.biggar [at] gmail.com</strong></font>.</li>
 								</ul>
 							</div>
@@ -104,6 +104,7 @@
 						<li>
 							<a href="#compilers">Compilers and Scripting Languages</a>
 							<ul>
+								<li><a href="#phd-dissertation">PhD Dissertation</a></li>
 								<li><a href="#so-2009">StackOverflow Talk: How not to Design a Scripting Language</a></li>
 								<li><a href="#fit-2009">One Representation to Rule Them All</a></li>
 								<li><a href="#ssa-2009">On the use of SSA with scripting languages</a></li>
@@ -129,7 +130,6 @@
 							<ul>
 								<li><a href="#wip-sac-journal">A Practical Solution for Scripting Language Compilers (Journal version)</a></li>
 								<li><a href="#wip-optimizer">Static analysis of Dynamic Scripting Languages</a></li>
-								<li><a href="#wip-phd-dissertation">PhD Dissertation</a></li>
 							</ul>
 						</li>
 					</ul>
@@ -150,6 +150,112 @@
 					<hr />
 					<hr />
 					<br />
+
+					<a name="phd-dissertation" />
+					<hr />
+					<p align="center">
+						<strong>
+							Design and Implementation of an Ahead-of-time Compiler for PHP<br />
+							Paul Biggar<br />
+							PhD Dissertation
+							<br />
+						</strong>
+					</p>
+					<hr />
+					<table width="700" align="center">
+						<tr>
+							<td align="center" width="25%"><a href="./thesis.pdf">Dissertation</a><br /></td>
+						</tr>
+					</table>
+					<hr />
+
+					<h3>Abstract</h3>
+					<p class="research">
+						In recent years the importance of dynamic scripting
+						languages&#8212;such as PHP, Python, Ruby and Javascript&#8212;has
+						grown as they are used for an increasing amount of software
+						development.  Scripting languages provide high-level language
+						features, a fast compile-modify-test environment for rapid
+						prototyping, strong integration with database and web
+						development systems, and extensive standard libraries. PHP
+						powers many of the most popular web applications such as
+						Facebook, Wikipedia and Yahoo. In general, there is a trend
+						towards writing an increasing amount of an application in a
+						scripting language rather than in a traditional programming
+						language, not least to avoid the complexity of crossing
+						between languages.
+					</p>
+
+					<p class="research">
+						Despite their increasing popularity, most scripting language
+						implementations remain interpreted. Typically, these
+						implementations are slow, between one and two orders of
+						magnitude slower than C. Improving the performance of
+						scripting language implementations would be of significant
+						benefit, however many of the features of scripting languages
+						make them difficult to compile ahead of time. In this
+						dissertation we argue that ahead-of-time compilation of
+						scripting languages is both possible and valuable.  We
+						present phc, an ahead-of-time compiler for the PHP language.
+						We describe the design and implementation of the compiler,
+						and identify specific challenges in the design of a compiler
+						for a dynamic scripting language.
+					</p>
+
+					<p class="research">
+						We determine that there are three important features of
+						scripting languages that are difficult to compile or
+						reimplement. Since scripting languages are defined primarily
+						through the semantics of their original implementations, they
+						often change semantics between releases. They provide C APIs,
+						used both for foreign-function interfaces and to write
+						third-party extensions. These APIs typically have tight
+						integration with the original implementation, and are used to
+						provide large standard libraries, which are difficult to
+						re-use, and costly to reimplement. Finally, they support
+						run-time code generation. These features make the important
+						goal of correctness difficult to achieve for compilers and
+						reimplementations.
+					</p>
+
+					<p class="research">
+						We present a technique to support these features in our
+						ahead-of-time compiler for PHP. Our technique uses the
+						original PHP implementation through the provided PHP C API,
+						both in our compiler, and in our generated code. We support
+						all of these important scripting language features,
+						particularly focusing on the correctness of compiled
+						programs. Additionally, our approach allows us to
+						automatically support limited future language changes. We
+						present a discussion and performance evaluation of this
+						technique, which we show increases the execution speed of PHP
+						programs by 1.55x in our benchmarks. In order to improve this
+						performance, static analysis and optimization are required.
+					</p>
+
+					<p class="research">
+						However, static analysis of scripting languages such as PHP
+						is difficult due to the features found in these languages.
+						These features include dynamic typing with implicit type
+						conversions, dynamic aliasing, implicit object and array
+						creation, and overloading of simple operators. We find that
+						as a result, simple analysis techniques such as SSA and
+						def-use chains are not straightforward to use, and that a
+						single unconstrained variable can ruin our analysis. We
+						describe the challenging semantics of PHP, and a static
+						analyser to model them. Our analysis combines alias analysis,
+						type-inference and constant-propagation for PHP, computing
+						results that are essential for other analyses and
+						optimizations. Our empirical results show that our analysis
+						is capable of determining that almost all program variables
+						are unaliased, and that dynamic types for over 60% of
+						variables can be statically determined by our analysis.
+					</p>
+
+					<br />
+					<br />
+
+
 
 
 
@@ -690,112 +796,6 @@
 					</p>
 					<br />
 					<br />
-
-
-					<a name="wip-phd-dissertation" />
-					<hr />
-					<p align="center">
-						<strong>
-							Design and Implementation of an Ahead-of-time Compiler for PHP<br />
-							Paul Biggar<br />
-							PhD Dissertation
-							<br />
-						</strong>
-					</p>
-					<hr />
-					<table width="700" align="center">
-						<tr>
-							<td align="center" width="25%"><a href="./wip-thesis.pdf">Submitted Version</a><br /></td>
-						</tr>
-					</table>
-					<hr />
-
-					<h3>Abstract</h3>
-					<p class="research">
-						In recent years the importance of dynamic scripting
-						languages&#8212;such as PHP, Python, Ruby and Javascript&#8212;has
-						grown as they are used for an increasing amount of software
-						development.  Scripting languages provide high-level language
-						features, a fast compile-modify-test environment for rapid
-						prototyping, strong integration with database and web
-						development systems, and extensive standard libraries. PHP
-						powers many of the most popular web applications such as
-						Facebook, Wikipedia and Yahoo. In general, there is a trend
-						towards writing an increasing amount of an application in a
-						scripting language rather than in a traditional programming
-						language, not least to avoid the complexity of crossing
-						between languages.
-					</p>
-
-					<p class="research">
-						Despite their increasing popularity, most scripting language
-						implementations remain interpreted. Typically, these
-						implementations are slow, between one and two orders of
-						magnitude slower than C. Improving the performance of
-						scripting language implementations would be of significant
-						benefit, however many of the features of scripting languages
-						make them difficult to compile ahead of time. In this
-						dissertation we argue that ahead-of-time compilation of
-						scripting languages is both possible and valuable.  We
-						present phc, an ahead-of-time compiler for the PHP language.
-						We describe the design and implementation of the compiler,
-						and identify specific challenges in the design of a compiler
-						for a dynamic scripting language.
-					</p>
-
-					<p class="research">
-						We determine that there are three important features of
-						scripting languages that are difficult to compile or
-						reimplement. Since scripting languages are defined primarily
-						through the semantics of their original implementations, they
-						often change semantics between releases. They provide C APIs,
-						used both for foreign-function interfaces and to write
-						third-party extensions. These APIs typically have tight
-						integration with the original implementation, and are used to
-						provide large standard libraries, which are difficult to
-						re-use, and costly to reimplement. Finally, they support
-						run-time code generation. These features make the important
-						goal of correctness difficult to achieve for compilers and
-						reimplementations.
-					</p>
-
-					<p class="research">
-						We present a technique to support these features in our
-						ahead-of-time compiler for PHP. Our technique uses the
-						original PHP implementation through the provided PHP C API,
-						both in our compiler, and in our generated code. We support
-						all of these important scripting language features,
-						particularly focusing on the correctness of compiled
-						programs. Additionally, our approach allows us to
-						automatically support limited future language changes. We
-						present a discussion and performance evaluation of this
-						technique, which we show increases the execution speed of PHP
-						programs by 1.55x in our benchmarks. In order to improve this
-						performance, static analysis and optimization are required.
-					</p>
-
-					<p class="research">
-						However, static analysis of scripting languages such as PHP
-						is difficult due to the features found in these languages.
-						These features include dynamic typing with implicit type
-						conversions, dynamic aliasing, implicit object and array
-						creation, and overloading of simple operators. We find that
-						as a result, simple analysis techniques such as SSA and
-						def-use chains are not straightforward to use, and that a
-						single unconstrained variable can ruin our analysis. We
-						describe the challenging semantics of PHP, and a static
-						analyser to model them. Our analysis combines alias analysis,
-						type-inference and constant-propagation for PHP, computing
-						results that are essential for other analyses and
-						optimizations. Our empirical results show that our analysis
-						is capable of determining that almost all program variables
-						are unaliased, and that dynamic types for over 60% of
-						variables can be statically determined by our analysis.
-					</p>
-
-					<br />
-					<br />
-
 
 
 
