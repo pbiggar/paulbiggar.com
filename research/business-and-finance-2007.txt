@@ -1,0 +1,298 @@
+Patently Counter-Productive.
+
+Paul Biggar explains how software patents risk damaging an innovative industry.
+
+The software industry is incredibly innovative, having in less than
+70 years turned itself from nothing into a multi-trillion euro
+industry. In Ireland alone, the software industry accounted for
+24000 jobs in 2005, and 24.5 billion euro in revenue, a growth of
+45% over 2004.
+
+One of the largest threats to this growth, and to Small and Medium
+software Enterprises (SMEs), is software patents. Patents are
+designed to foster innovation by restricting the use of an invention
+by others.  Software is automatically protected by copyright, but in
+America it is also possible to patent software ideas. Since the
+restriction is on an idea, as opposed to a single expression of an
+idea as in copyright, SMEs risk incalculable damage from software
+patents.  With software patents, the cost of software development
+would be significantly increased by the legal costs of producing
+that software, resulting in decreased innovation in the industry.
+
+Though prohibited by the European Patent Convention, more than 50000
+software patents have been granted by the European Patent Office.
+While an EU directive to introduce software patents into Europe, and
+to retroactively allow existing software patents, was defeated in
+2005, the spectre of software patents appears again. 
+
+++++++++++++++++++++++++++++++++
+Unnecessary
+++++++++++++++++++++++++++++++++
+
+Software patents are frequently promoted using analogies with the
+pharmaceuticals industry, but the high cost in time and money of
+creating new drugs make the industries very different. As such, the
+two industries cannot be compared, since innovation has existed
+without patents in the software industry, which cannot be said about
+pharmaceuticals.
+
+Opponents of software patents have pointed to the fact that they are
+unnecessary and counter-productive. Growth in the software industry
+is unprecedented, and that growth occurred initially when patents
+were not being granted. Today's software behemoths, such as
+Microsoft, IBM, Hewlett-Packard and Oracle, now seek software
+patents to support their dominance. Ironically, these giants rose to
+prominence without software patents, in a time before they were
+available in America. During their growth, as is the case for
+European companies today, software was protected from its
+competitors only by copyright.
+
+Though Microsoft now supports them, Bill Gates damned software
+patents himself. "If people had understood how patents would be
+granted when most of today's ideas were invented, and had taken out
+patents", Gates said in a 1991 memo, "the industry would be at a
+complete standstill today." This was written before Microsoft's
+staggering growth, and before it began its current policy of
+aggressively acquiring and pursuing patents and patent litigation.
+
+++++++++++++++++++++++++++++++++
+Expensive
+++++++++++++++++++++++++++++++++
+
+Currently, it is relatively cheap to produce software, and many
+small businesses require little more than a programmer, a computer
+and an internet connection.  Software which is produced cheaply can
+also be replicated cheaply --- it is scarcely more expensive to
+produce a million copies of a software product than it is to produce
+one.
+
+The process of filing a patent with the European Patent Office is
+costly, both in terms of time and money. However, the main cost of
+software patents is that SMEs will no longer be certain that they
+are entitled to sell the software which they write.  A company which
+writes software in isolation is guaranteed not to violate any other
+company's copyright. However, with software patents, it becomes
+necessary to search for whether any other company or individual has
+thought of the idea first. This patent search is expensive, and is
+difficult to complete exhaustively. Patent filings are written in
+legal lingo, and keywords which a company uses to describe its
+product may not necessarily be used in the patent filing. Patents on
+software which have been granted in Europe are even more obfuscated,
+describing a system implementing the software idea, instead of
+describing the idea itself.
+
+A piece of software is an amalgamation of hundreds of ideas. The
+novelty of an idea is a matter of perspective --- the novice may see
+novelty where an experienced professional sees obviousness. Is a
+business required to diligently search for patents covering each of
+the hundreds of ideas in their product? If so, what standard of
+novelty should they use? If they do find one or more patents
+covering their ideas, can they afford to pay all the required
+licencing fees? The alternative, working around an idea, is also
+risky; for each work-around, more patents may be infringed.
+
+What of the company wishing to enter an established market? Forging
+a foothold into an existing market may be impossible for a
+new-comer, as many of the ideas will already be patented by the
+incumbents. In software, entrants to a market must ensure that their
+product is compatible with the dominant market players' saved files,
+database or communication protocols. Software patents would create
+barriers to interoperability. Companies wishing to create tools
+which operate on these patented standards, such as Microsoft Word
+documents, may be required to pay a licensing fee, or may simply be
+refused entry to these markets. Without the ability to interoperate,
+new products are unlikely to succeed. With fewer competitors, the
+risk of innovation stagnation is high, and consumers of these
+markets may suffer.
+
+For an SME, the worst case is patent litigation. A legal opinion on
+a threatened suit can cost thousands of euro, but a legal case will
+run into the hundreds of thousands. It is very difficult to
+over-turn a patent and the legal process is estimated to take two to
+five years. Between large companies, each with their own portfolio
+of patents, patent suits frequently get resolved with
+cross-licensing agreements. However, newcomers without those
+portfolios cannot protect themselves in the same way, and as a
+result may be chased from the market. In this manner, innovation
+suffers.
+
+In further irony, a software patent system may in fact discourage
+investment.  Laura Creighton, a European venture capitalist, claims
+that many small companies are below the radar of software patent
+holders. However, upon receiving an investment, the cash injection
+can make a now-medium-sized company a target for lawsuits. Creighton
+is a software entrepreneur and vice-president of the Foundation for
+a Free Information Infrastructure, which campaigns against software
+patents. She claims that the proposed system should be scrapped, and
+efforts turned to better funding opportunities for SMEs.
+
+++++++++++++++++++++++++++++++++
+Open source
+++++++++++++++++++++++++++++++++
+
+The rise of open source software has led to great innovation in
+business tools and consumer software products, leading to greatly
+reduced costs for SMEs. Open source software refers to software
+which is free, whose source code is available for free, and for
+which the right to distribute the code is not restricted. The worlds
+most popular web server, Apache, is open source, and is credited
+with a number of important technological innovations. Firefox and
+OpenOffice are both innovative alternatives to Microsoft's closed
+source offerings. OpenOffice provides an alternative to Microsoft
+Office, a tool practically required in business today, for hundreds
+of euro per copy less. These tools, as well as thousands of others,
+such as the GNU/Linux operating system, reduce the costs of starting
+and running SMEs, and can speed up the development time for software
+companies, especially those who provide bespoke software
+development.
+
+However, open source software is particularly in danger from
+software patents. Since open source projects are run by volunteers,
+there is rarely funding to fight patent infringement lawsuits, nor
+to pay license fees. A fundamental part of an open source product is
+the right to redistribute both the software and its source code. If
+there is a licensing fee on each copy, then the software's authors
+must be able to count the number of copies distributed, which is
+impossible when all users have the right to redistribute the
+software and its source.
+
+Microsoft is currently exploiting this situation as their legal case
+with the European Commission winds down. The MCPP Development
+Agreements, published in September by Microsoft, require payments of
+certain royalties to interoperate with their communication
+protocols. Samba is an open source alternative to Microsoft's file
+and print services. Discussing MCPP, their leader, Jeremy Allison,
+said "it's impossible to release open source implementations of the
+product". With software patents in Europe, the innovation afforded
+by open source is likely to be damaged, at a high cost to SMEs.
+
+++++++++++++++++++++++++++++++++
+American Model
+++++++++++++++++++++++++++++++++
+
+In America, software patents are allowed. Although no laws were
+changed to specifically allow software patents, a 1981 Supreme Court
+ruling in the case of Diamond v. Diehr was the first case to permit
+them. In 1993, a new Commissioner for Patents and Trademarks, Bruce
+Lehman, was appointed, leading to a policy change in 1995. Already,
+approximately 5000 software patents were being granted per year. By
+2007, this had increased to greater than 40000 software patents per
+year.
+
+Despite this, there are many within the United States who recognize
+that software patents were a mistake. A report by the Federal Trade
+Commission in 2003, titled "Report on Innovation", was damning about
+the innovative value of software patents. It claimed that
+'competition drives innovation in these industries', and that the
+'use of copyright protection or open source software [fosters
+innovation].' Additionally, the presence of 'software and Internet
+patents are impeding innovation' by 'impairing follow-on incentives,
+increasing entry barriers, creating uncertainty that harms
+incentives to invest in innovation, and producing patent thickets.'
+Proponents of software patents suggest that they promote investment
+into research and development, a point contradicted by the FTC
+report: “[This] forces companies to divert resources from R&D into
+obtaining patents, [and makes] it more difficult to commercialize
+new products and raises uncertainty and investment risks.'
+
+A commonly cited example of a bad patent is the Amazon.com
+'one-click' patent. Amazon protected the 'novel' idea of selling
+goods to a customer with a single mouse-click on its web-site, in
+1997, and just three weeks later sued their rival,
+barnesandnobles.com. Barnes and Nobles was forced to remove their
+infringing 'Express Lane' technology when the appeals court ruled in
+Amazon's favour in 1999.
+
+An unintended effect of the US patent system is referred to as
+'submarine patents'. In some cases, software patents may not be
+granted until many years after the patent is filed. During this
+time, the patented idea may have been used in software standards, or
+by a product which has sold millions of copies, and the infringer
+may owe million of dollars in licencing fees.
+
+'Patent trolls' are companies which buy the patent portfolios of
+bankrupt companies, attempting to extract patent revenue from
+healthy companies who violate their rights. In a famous 2004 case,
+Disney agreed to pay between $1.1m and $1.6m to Acacia Technology
+Group for key patents it held related to streaming video. Disney's
+liability for patent infringement was not reduced by that fact that
+it was not intentional and that they did not know about the patent.
+
+Even those who oppose software patents in America believe it may not
+be possible to change the system. Revoking software patents would
+render null and void the large investments made by many companies
+operating under the US' software patent umbrella, which is unlikely
+to be popular amongst large businesses, whose campaign contributions
+fuel US elections. Those same companies are the ones pushing for
+patent 'harmonization' in Europe, and it is well to examine the US
+model, before we make the same mistakes here.
+
+++++++++++++++++++++++++++++++++
+Battle in Brussels
+++++++++++++++++++++++++++++++++
+
+The European situation also has in interesting history. The European
+Patent Convention bans software patents in Article 52, though the
+wording depends on one's reading. The European Patent Office (EPO)
+is charged with approving patents, and interprets the wording to
+allow the granting of software patents. This has resulted in the
+filing of greater than 50000 software patents to date. However,
+enforcement falls to national courts, which have so far regarded the
+patents as invalid.
+
+The difference between the law and the practice of the EPO led to a
+large debate lasting from 2002 to 2005. The European Commission
+introduced a 'directive on the patentability of computer-implemented
+inventions' in 2002. Intended to 'harmonize' the patent policies of
+EU member states, members of the European Parliament worried that it
+validated the EPO's policy of granting software patents. The
+parliament returned the directive to the Commission in a heavily
+amended form in September 2003, making it clear that software was
+not to be patented.  Incredibly, the great majority of the
+amendments were discarded before the directive was given to the
+Council of Ministers, who approved it in May 2004. Furthermore, this
+new version was submitted for acceptance without discussion, which
+was narrowly averted by intervention by the Polish Minister for
+Science and Information Technology, Wlodzimierz Marcinski, in
+December 2004. Though the Parliament asked for the Commission to
+restart the drafting process, the directive reappeared for adoption
+in March 2005. Eventually, the European Parliament rejected it in
+its second reading, by an overwhelming margin of 648-14, in July
+2005.
+
+Though the directive was rejected, a similar policy emerged a year
+later. The European Patent Litigation Agreement would replace the
+national courts, who have ruled against software patents, with a new
+court, under that auspices of the EPO. The new court, the European
+Patent Judiciary, would be appointed by the EPO, leading to de facto
+recognition of EPO approved software patents, including the 50000
+patents whose legal status in currently dubious.
+
+European Association of Craft, Small and Medium-sized Enterprises
+(UEAPME) is the largest representative body for SMEs in Europe,
+representing 11 million SMEs. During the discussion of the
+directive, it came out strongly against software patents in Europe,
+in order to protect the 50m employees under its banner.
+
+"UEAPME is opposed to the introduction of an EU software patent,
+which would reinforce monopolization in the software sector, damage
+interoperability and act as a barrier to innovation by SMEs. Small
+firms simply do not have the resources to engage in the costly and
+time-consuming process of patent application. This would enable
+dominant large firms in the sector to secure vast numbers of patents
+and result in crippling litigation costs, which would put small
+firms out of business.
+
+"UEAPME believes that software is already successfully covered by
+the copyrighting system, under which the software sector has
+developed and continues to flourish. Open sourcing has enabled
+innovation in the software sector to thrive and small firms to act
+as job generators.  Introducing software patenting would threaten
+the survival of these smaller innovators."
+
+Experience in the United States, the wishes of the European
+Parliament and of a huge number of SMEs indicate that software
+patents are not wanted in Europe. There is no evidence that they are
+required for innovation, in Europe or elsewhere, and have been shown
+to in fact be counter-productive in this regard. Will the EPO and
+the European Commission listen?

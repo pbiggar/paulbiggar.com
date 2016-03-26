@@ -1,0 +1,11 @@
+Revision 1 - January 2007:
+
+In Section 8.3.2, the original report claimed that each step involved four
+passes over the array, when in fact, it should be five. This means that the
+figure of 16 passes should be 20, and that the fraction 9/16ths should be
+9/20ths. Also, the estimation of two misses per key should be 2.5 misses per
+key, which agrees exactly with the results in Section 8.3.3.
+
+Additionally, the pages were corrupted after a number of graphs.
+
+These are fixed in the latest copy of the tech report and code.

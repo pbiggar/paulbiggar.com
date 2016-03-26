@@ -1,0 +1,837 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+	<head>
+		<title>TCD CS Paul Biggar</title>
+		<style type="text/css">
+			h1 { text-align:center; }
+			h2 { text-align:center; }
+			h3 { text-align:center; }
+			.research { text-align:justify; }
+			.footer
+			{
+				font-size:smaller;
+				text-align:center;
+			}
+			.note
+			{
+				background: #cccccc;
+				border: solid 1px #8a7640;
+				padding: 5px;
+				text-align:justify;
+				font-size:140%;
+			}
+
+
+		</style>
+	</head>
+
+	<body>
+
+		<!-- **************************************** -->
+		<!-- wrap the entire page in a single table, so as the have it centered and a common width -->
+		<!-- **************************************** -->
+		<table width="800" align="center">
+			<tr>
+				<td>
+
+
+					<!-- **************************************** -->
+					<!-- The CS header. Changing this makes it look different, so left as is -->
+					<!-- **************************************** -->
+					<table border="0" cellspacing="4" cellpadding="4" align="center"> 
+						<tr>
+							<td align="left">
+								<img src="https://www.cs.tcd.ie/wwwresources/du_cols.gif" alt="Dublin University Crest" height="35" width="30" />
+							</td>
+							<td align="center">
+								<font size="-2">
+									<strong>
+										<a href="https://www.cs.tcd.ie">Computer Science Department</a>,
+									</strong>
+									<a href="https://www.tcd.ie">Trinity College</a>
+								</font>
+							</td>
+							<td>
+								<img src="https://www.cs.tcd.ie/wwwresources/tcd_crss.gif" alt="Trinity College Crest" height="35" width="30"  />
+							</td>
+						</tr>
+					</table>
+
+					<hr />
+					<hr />
+					<br />
+					<!-- **************************************** -->
+					<!-- The end of the CS header -->
+					<!-- **************************************** -->
+
+					<!-- **************************************** -->
+					<!-- The self description bit -->
+					<!-- **************************************** -->
+					<h1>Paul Biggar (Research)</h1>
+					<hr />
+					<table width="800">
+						<tr>
+						<td colspan="2">
+							<div class="note">
+								<div style="text-align:center;">
+								Working for Mozilla on SpiderMonkey.
+								</div>
+								<ul>
+									<li>Read my <a href="http://blog.paulbiggar.com">blog</a>.</li>
+									<li>Check out my <a href="#wip-phd-dissertation">PhD dissertation on compiling scripting languages</a>.</li>
+									<li>Read my <a href="paulbiggar.pdf">CV</a>.</li>
+									<li>Contact me at <font size="4"><strong>paul.biggar [at] gmail.com</strong></font>.</li>
+								</ul>
+							</div>
+							</td>
+							<td align="right" valign="top"><img src="paulbiggar.jpg" alt="Paul Biggar"/></td>
+						</tr>
+					</table>
+
+					<br />
+					
+					<hr />
+					<br />
+
+					<!-- **************************************** -->
+					<!-- End of self description bit -->
+					<!-- **************************************** -->
+
+					<h4>Research</h4>
+					<hr />
+					<ul>
+						<li>
+							<a href="#compilers">Compilers and Scripting Languages</a>
+							<ul>
+								<li><a href="#so-2009">StackOverflow Talk: How not to Design a Scripting Language</a></li>
+								<li><a href="#fit-2009">One Representation to Rule Them All</a></li>
+								<li><a href="#ssa-2009">On the use of SSA with scripting languages</a></li>
+								<li><a href="#phc-talks">phc talks (March 2009)</a></li>
+								<li><a href="#sac-2009">A Practical Solution for Scripting Language Compilers</a> </li>
+							</ul>
+						</li>
+
+						<br />
+
+						<li>
+							<a href="#sorting">Sorting</a>
+							<ul>
+								<li><a href="#jea-2008">An Experimental Study of Sorting and Branch Prediction</a></li>
+								<li><a href="#sorting-tr">Sorting in the Presence of Branch Prediction and Caches</a></li>
+							</ul>
+						</li>
+
+						<br />
+
+						<li>
+							<a href="#wip">Work in progress <small><i>(comments welcome)</i></small></a>
+							<ul>
+								<li><a href="#wip-sac-journal">A Practical Solution for Scripting Language Compilers (Journal version)</a></li>
+								<li><a href="#wip-optimizer">Static analysis of Dynamic Scripting Languages</a></li>
+								<li><a href="#wip-phd-dissertation">PhD Dissertation</a></li>
+							</ul>
+						</li>
+					</ul>
+					<hr />
+					<br />
+					<br />
+					<br />
+					<br />
+
+
+
+
+
+					<a name="compilers" />
+					<hr />
+					<hr />
+					<h2>Compilers and Scripting Languages</h2>
+					<hr />
+					<hr />
+					<br />
+
+
+
+					<a name="so-2009" />
+					<hr />
+					<p align="center">
+						<strong>
+							How not to Design a Scripting Language<br />
+							Paul Biggar<br />
+							StackOverflow London, October 28, 2009<br />
+						</strong>
+					</p>
+					<hr />
+
+
+					<table width="700" align="center">
+						<tr>
+
+							<td align="center"><a href="http://stackoverflow.carsonified.com/events/london/">Program</a></td>
+
+							<td align="center">
+								<a href="so-2009-slides.pdf">Slides</a>
+								<a href="so-2009-slides-notes.pdf">(with notes)</a>
+							</td>
+
+							<td align="center"><a href="http://meta.stackoverflow.com/questions/27633/devdays-reviews-london">Reviews</a></td>
+
+							<td align="center"><a href="http://search.twitter.com/search?q=%22Paul+Biggar%22+%23devdays+since%3A2009-10-28+until%3A2009-10-29">Twitter</a></td>
+							
+						</tr>
+					</table>
+					<hr />
+
+					<br />
+					<br />
+
+
+
+
+
+
+					<a name="fit-2009" />
+					<hr />
+					<p align="center">
+						<strong>
+							One Representation to Rule Them All<br />
+							(Combining analyses on SSA with On-Demand SSA Construction)<br />
+							Paul Biggar and David Gregg<br />
+							PLDI '09 FIT Session
+							(June 2009)<br />
+						</strong>
+					</p>
+					<hr />
+
+					<table width="700" align="center">
+						<tr>
+							<td align="center"><a href="fit-2009.pdf">Paper</a></td>
+							<td align="center"><a href="fit-2009.bib">Bibtex</a></td>
+							<td align="center"><a href="fit-2009-code.tar.gz">Code</a></td>
+							<td align="center"><a href="fit-2009-slides.pdf">Slides</a></td>
+
+							<td align="center"><a href="http://pldifit.blogspot.com/2009/06/one-representation-to-rule-them-all.html">Comments</a></td>
+						</tr>
+					</table>
+					<hr />
+					<h3>Summary</h3>
+						<p class="research">
+							The authors sketch an algorithm for constructing an SSA
+							intermediate representation while performing analysis that
+							typically preceded SSA construction. The goal is to
+							combine the benefits of SSA (sparse representation) with
+							costly analysis so that the analysis is positively
+							impacted (faster, more precise).
+						</p>
+					<br />
+
+
+
+					<a name="ssa-2009" />
+					<hr />
+					<p align="center">
+						<strong>
+							On the use of SSA with scripting languages<br />
+							Paul Biggar and David Gregg<br />
+							Static Single-Assignment Form Seminar
+							(April 2009)<br />
+						</strong>
+					</p>
+					<hr />
+
+					<table width="700" align="center">
+						<tr>
+							<td align="center"><a href="http://www.prog.uni-saarland.de/ssasem/">Seminar Page</a></td>
+							<td align="center">
+								<a href="ssa-2009-slides.pdf">Slides</a>
+								<a href="ssa-2009-slides-notes.pdf">(with notes)</a>
+							</td>
+							
+
+
+						</tr>
+					</table>
+					<hr />
+					<h3>Summary</h3>
+						<p class="research">
+							Constructing SSA form for static languages is a
+							well-studied problem.
+							Techniques exist to handle all of the most common features
+							of static languages, and these solutions have been tried
+							and tested in production level compilers for many years.
+						</p>
+
+						<p class="research">
+							In our study of optimizing dynamic scripting languages,
+							specifically PHP, we find this is not the case.
+							The information required to build SSA form&#8212;that is,
+							some conservatively complete set of unaliased scalars, and
+							the locations of their uses and definitions&#8212;is not
+							available directly from the program source, and can not be
+							derived from a simple analysis.
+							Instead, we find a litany of features whose presence must
+							be ruled out, or heavily analysed, in order to obtain a
+							non-pessimistic estimate.
+						</p>
+
+						<p class="research">
+							Scripting languages commonly feature run-time code generation, built-in
+							functions, and variable-variables, all of which may alter arbitrary unnamed
+							variables.
+							Less common&#8212;but still possible&#8212;features include the
+							existence of object handlers which have the ability to
+							alter any part of the program state, most dangerously a
+							function's local symbol-table.
+						</p>
+
+						<p class="research">
+							Ruling out the presence of these features requires precise, inter-procedural,
+							whole-program analysis.
+							We discuss the futility of the pessimistic solution, the
+							analyses required to provide a precise SSA form, and how
+							the presence of variables of unknown types affect the
+							precision of SSA.
+						</p>
+					<br />
+
+
+
+
+
+					<a name="phc-talks" />
+					<hr />
+					<p align="center">
+						<strong>
+							Compiling and Optimizing Scripting Languages<br />
+							Paul Biggar and David Gregg<br />
+							Various talks (March 2009)<br />
+						</strong>
+					</p>
+					<hr />
+
+					<table width="700" align="center">
+
+						<tr>
+							<td><a href="http://www.facebook.com">Facebook</a> - 16th March - Palo Alto, CA</td>
+							<td align="center"><a href="paul_biggar_facebook_16_mar_2009.pdf">Slides</a></td>
+							<td align="center"><a href="paul_biggar_facebook_16_mar_2009_notes.pdf">(with notes)</a></td>
+						</tr>
+
+						<tr>
+							<td><a href="http://www.llnl.gov">LLNL</a> - 17th March - Livermore, CA</td>
+							<td align="center"><a href="paul_biggar_llnl_17_mar_2009.pdf">Slides</a></td>
+							<td align="center"><a href="paul_biggar_llnl_17_mar_2009_notes.pdf">(with notes)</a></td>
+						</tr>
+
+						<tr>
+							<td><a href="http://research.google.com/video.html">Google</a> - 18th March - Mountain View, CA</td>
+							<td align="center"><a href="paul_biggar_google_18_mar_2009.pdf">Slides</a></td>
+							<td align="center"><a href="paul_biggar_google_18_mar_2009_notes.pdf">(with notes)</a></td>
+							<td align="center"><a href="http://www.youtube.com/watch?v=kKySEUrP7LA">video</a></td>
+						</tr>
+	
+						<tr>
+							<td><a href="http://www.ossbarcamp.com">OSS BarCamp</a> - 28th March - Dublin</td>
+							<td align="center"><a href="paul_biggar_ossbarcamp_28_mar_2009.pdf">Slides</a></td>
+							<td align="center"><a href="paul_biggar_ossbarcamp_28_mar_2009_notes.pdf">(with notes)</a></td>
+						</tr>
+
+					</table>
+					<hr />
+					<h3>Abstract</h3>
+					<p class="research">
+						Scripting languages offer unique challenges to compiler
+						writers.  Challenges to compilation include undefined and
+						changing language semantics, and run-time code generation.
+						However, optimizing compilers face greater challenges still.
+						Scripting languages offer many run-time features which are
+						difficult to optimize, including run-time typing, run-time
+						aliasing, run-time class and function definitions and
+						run-time code generation. I discuss these problems, and a
+						great number of their solutions, in relation to phc
+						(<a href="http://phpcompiler.org">phpcompiler.org</a>),
+						our optimizing ahead-of-time compiler for PHP.
+					</p>
+					<br />
+					<br />
+
+
+
+
+
+
+					<a name="sac-2009" />
+					<hr />
+					<p align="center">
+						<strong>
+							A Practical Solution for Scripting Language Compilers<br />
+							Paul Biggar, Edsko de Vries and David Gregg<br />
+							SAC '09: ACM Symposium on Applied Computing (2009),
+							(March 2009)<br />
+						</strong>
+					</p>
+					<hr />
+
+					<table width="700" align="center">
+						<tr>
+							<td align="center">
+								<a href="http://portal.acm.org/citation.cfm?id=1529282.1529709">ACM version</a>
+								<br />
+								<small>(<a href="sac-2009.pdf">Author version</a>)</small>
+							</td>
+
+							
+							<td align="center"><a href="sac-2009.bib">Bibtex</a></td>
+							<td align="center"><a href="TODO">Code (TODO)</a></td>
+							<td align="center">
+								<a href="paul_biggar_sac_12_mar_2009.pdf">Slides</a> <br/>
+								<a href="paul_biggar_sac_12_mar_2009_notes.pdf">(with notes)</a>
+							</td>
+						</tr>
+					</table>
+					<hr />
+					<h3>Abstract</h3>
+					<p class="research">
+						Although scripting languages are becoming increasingly
+						popular, even mature scripting language implementations
+						remain interpreted. Several compilers and reimplementations
+						have been attempted, generally focusing on performance.
+					</p>
+					<p class="research">
+						Based on our survey of these reimplementations, we determine
+						that there are three important features of scripting
+						languages that are difficult to compile or reimplement. Since
+						scripting languages are defined primarily through the
+						semantics of their original implementations, they often
+						change semantics between releases. They provide large
+						standard libraries, which are difficult to re-use, and costly
+						to reimplement. They provide C APIs, used both for
+						foreign-function-interfaces and to write third-party
+						extensions. These APIs typically have tight integration with
+						the original implementation. Finally, they support run-time
+						code generation. These features make the important goal of
+						correctness difficult to achieve.
+					</p>
+					<p class="research">
+						We present a technique to support these features in an
+						ahead-of-time compiler for PHP. Our technique uses the
+						original PHP implementation through the provided C API, both
+						in our compiler, and in our generated code. We support all of
+						these important scripting language features, particularly
+						focusing on the correctness of compiled programs.
+						Additionally, our approach allows us to automatically support
+						limited future language changes. We present a discussion and
+						performance evaluation of this technique, which has not
+						previously been published.
+					</p>
+					<br />
+					<br />
+
+
+
+					<a name="sorting" />
+					<hr />
+					<hr />
+					<h2>Sorting</h2>
+					<hr />
+					<hr />
+
+					<br />
+
+					<a name="jea-2008" />
+					<hr />
+					<p align="center">
+						<strong>
+							An Experimental Study of Sorting and Branch Prediction<br />
+							Paul Biggar, Nicholas Nash, Kevin Williams and David Gregg<br />
+							ACM Journal of Experimental Algorithmics, Volume 12
+							(June 2008)<br />
+						</strong>
+					</p>
+					<hr />
+					<table width="700" align="center">
+						<tr>
+							<td align="center" width="25%">
+								<a href="http://portal.acm.org/citation.cfm?id=1370599">ACM version</a><br/>
+								<small>(<a href="./jea-2008.pdf">Author version</a>)</small></td>
+							<td align="center"><a href="./jea-2008.bib">Bibtex</a></td>
+							<td align="center"><a href="http://github.com/pbiggar/sorting-branches-caches/">Code/data</a></td>
+						</tr>
+					</table>
+					<hr />
+
+					<h3>Abstract</h3>
+					<p class="research">
+					Sorting is one of the most important and well-studied problems
+					in computer science. Many good algorithms are known which
+					offer various trade-offs in efficiency, simplicity, memory
+					use, and other factors. However, these algorithms do not take
+					into account features of modern computer architectures that
+					significantly influence performance. Caches and branch
+					predictors are two such features and, while there has been a
+					significant amount of research into the cache performance of
+					general purpose sorting algorithms, there has been little
+					research on their branch prediction properties. In this paper,
+					we empirically examine the behavior of the branches in all the
+					most common sorting algorithms. We also consider the
+					interaction of cache optimization on the predictability of the
+					branches in these algorithms. We find insertion sort to have
+					the fewest branch mispredictions of any comparison-based
+					sorting algorithm, that bubble and shaker sort operate in a
+					fashion that makes their branches highly unpredictable, that
+					the unpredictability of shellsort's branches improves its
+					caching behavior and that several cache optimizations have
+					little effect on mergesort's branch mispredictions. We find
+					also that optimizations to quicksort, for example the choice
+					of pivot, have a strong influence on the predictability of its
+					branches. We point out a simple way of removing branch
+					instructions from a classic heapsort implementation and also
+					show that unrolling a loop in a cache-optimized heapsort
+					implementation improves the predicitability of its branches.
+					Finally, we note that when sorting random data two-level
+					adaptive branch predictors are usually no better than simpler
+					bimodal predictors. This is despite the fact that two-level
+					adaptive predictors are almost always superior to bimodal
+					predictors, in general.
+					</p>
+					<br />
+					<br />
+
+
+
+					<a name="sorting-tr" />
+					<hr />
+					<p align="center">
+						<strong>
+							Sorting in the Presence of Branch Prediction and Caches<br />
+							Paul Biggar and David Gregg<br />
+							(Technical Report TCD-CS-2005-57 - August, 2005)<br />
+							(Revision 1 - January, 2007)
+						</strong>
+					</p>
+					<hr />
+					<table width="700" align="center">
+						<tr>
+							<td align="center" width="20%"><a href="./TCD-CS-2005-57-rev1.pdf">Report</a></td>
+							<td align="center" width="20%"><a href="./TCD-CS-2005-57-bibtex.bib">Bibtex</a></td>
+							<td align="center"><a href="http://github.com/pbiggar/sorting-branches-caches/">Code/data</a></td>
+							<td align="center" width="20%"><a href="./TCD-CS-2005-57-errata.txt">Errata</a></td>
+						</tr>
+					</table>
+					<hr />
+
+					<h3>Abstract</h3>
+					<p class="research">
+					Sorting is one of the most important and studied
+					problems in computer science. Many good algorithms
+					exist which offer various trade-offs in efficiency,
+					simplicity and memory use. However most of these
+					algorithms were discovered decades ago at a time when
+					computer architectures were much simpler than today.
+					Branch prediction and cache memories are two
+					developments in computer architecture that have a
+					particularly large impact on the performance of sorting
+					algorithms.
+					</p>
+					<p class="research">
+					This report describes a study of the behaviour of
+					sorting algorithms on branch predictors and caches.
+					Our work on branch prediction is almost entirely new,
+					and finds a number of important results. In particular
+					we show that insertion sort causes the fewest branch
+					mispredictions of any comparison-based algorithm, that
+					optimizations - such as the choice of the pivot in
+					quicksort - can have a large impact on the
+					predictability of branches, and that advanced two-level
+					branch predictors are usually worse at predicting
+					branches in sorting algorithms than simpler branch
+					predictors. In many cases it is possible to draw links
+					between classical theoretical analyses of algorithms
+					and their branch prediction behaviour.
+					</p>
+					<p class="research">
+					The other main work described in this report is an
+					analysis of the behaviour of sorting algorithms on
+					modern caches. Over the last decade there has been
+					considerable interest in optimizing sorting algorithms
+					to reduce the number of cache misses. We experimentally
+					study the cache performance of both classical sorting
+					algorithms, and a variety of cache-optimized algorithms
+					proposed by LaMarca and Ladner. Our experiments cover a
+					much wider range of algorithms than other work,
+					including the O(N<sup>2</sup>) sorts, radixsort and
+					shellsort, all within a single framework. We discover a
+					number of new results, particularly relating to the
+					branch prediction behaviour of cache-optimized sorts.
+					</p>
+					<p class="research">
+					We also developed a number of other improvements to the
+					algorithms, such as removing the need for a sentinel in
+					classical heapsort. Overall, we found that a
+					cache-optimized radixsort was the fastest sort in our
+					study; the absence of comparison branches means that
+					the algorithm causes almost no branch mispredictions.
+					</p>
+					<br />
+					<br />
+
+
+
+					<a name="wip" />
+					<hr />
+					<hr />
+					<h2>Work in progress <small><i>(comments welcome)</i></small></h2>
+					<hr />
+					<hr />
+
+					<br />
+
+
+					<a name="wip-sac-journal" />
+					<hr />
+					<p align="center">
+						<strong>
+							A Practical Solution for Scripting Language Compilers<br />
+							Paul Biggar, Edsko de Vries and David Gregg<br />
+							Journal version, in submission
+						</strong>
+					</p>
+					<hr />
+
+					<table width="700" align="center">
+						<tr>
+							<td align="center"><a href="wip-sac-journal.pdf">Draft</a></td>
+						</tr>
+					</table>
+					<hr />
+					<h3>Abstract</h3>
+					<p class="research">
+						Although scripting languages are becoming increasingly
+						popular, even mature scripting language implementations
+						remain interpreted. Several compilers and reimplementations
+						have been attempted, generally focusing on performance.
+					</p>
+					<p class="research">
+						Based on our survey of these reimplementations, we determine
+						that there are three important features of scripting
+						languages that are difficult to compile or reimplement. Since
+						scripting languages are defined primarily through the
+						semantics of their original implementations, they often
+						change semantics between releases. They provide large
+						standard libraries, which are difficult to re-use, and costly
+						to reimplement. They provide C APIs, used both for
+						foreign-function-interfaces and to write third-party
+						extensions. These APIs typically have tight integration with
+						the original implementation. Finally, they support run-time
+						code generation. These features make the important goal of
+						correctness difficult to achieve.
+					</p>
+					<p class="research">
+						We present a technique to support these features in an
+						ahead-of-time compiler for PHP. Our technique uses the
+						original PHP implementation through the provided C API, both
+						in our compiler, and in our generated code. We support all of
+						these important scripting language features, particularly
+						focusing on the correctness of compiled programs.
+						Additionally, our approach allows us to automatically support
+						limited future language changes. We present a discussion and
+						performance evaluation of this technique, which has not
+						previously been published.
+					</p>
+					<br />
+					<br />
+
+
+
+
+					<a name="wip-optimizer" />
+					<hr />
+					<p align="center">
+						<strong>
+							Static Analysis of Dynamic Scripting Languages<br />
+							Paul Biggar and David Gregg<br />
+							In Submission
+							<br />
+						</strong>
+					</p>
+					<hr />
+					<table width="700" align="center">
+						<tr>
+							<td align="center" width="25%"><a href="./wip-optimizer.pdf">Draft</a></td>
+						</tr>
+					</table>
+					<hr />
+
+					<h3>Abstract</h3>
+					<p class="research">
+					Scripting languages, such as PHP, are among the most widely used
+					and fastest growing programming languages, particularly for web
+					applications.
+					Static analysis is an important tool for detecting security
+					flaws, finding bugs, and improving compilation of programs.
+					However, static analysis of scripting languages is difficult due
+					to features found in languages such as PHP.
+					These features include run-time code generation, dynamic weak
+					typing, dynamic aliasing, implicit object and array creation,
+					and overloading of simple operators.
+					We find that as a result, simple analysis techniques such as SSA
+					and def-use chains are not straight-forward to use, and that a
+					single unconstrained variable can ruin our analysis.
+					In this paper we describe a static analyser for PHP, and show
+					how classical static analysis techniques can be extended to
+					analyse PHP.
+					In particular our analysis combines alias analysis,
+					type-inference and constant-propagation for PHP, computing
+					results that are essential for other analyses and optimizations.
+					We find that this combination of techniques allows the
+					generation of meaningful and useful results from our static
+					analysis.
+					</p>
+					<br />
+					<br />
+
+
+					<a name="wip-phd-dissertation" />
+					<hr />
+					<p align="center">
+						<strong>
+							Design and Implementation of an Ahead-of-time Compiler for PHP<br />
+							Paul Biggar<br />
+							PhD Dissertation
+							<br />
+						</strong>
+					</p>
+					<hr />
+					<table width="700" align="center">
+						<tr>
+							<td align="center" width="25%"><a href="./wip-thesis.pdf">Submitted Version</a><br /></td>
+						</tr>
+					</table>
+					<hr />
+
+					<h3>Abstract</h3>
+					<p class="research">
+						In recent years the importance of dynamic scripting
+						languages&#8212;such as PHP, Python, Ruby and Javascript&#8212;has
+						grown as they are used for an increasing amount of software
+						development.  Scripting languages provide high-level language
+						features, a fast compile-modify-test environment for rapid
+						prototyping, strong integration with database and web
+						development systems, and extensive standard libraries. PHP
+						powers many of the most popular web applications such as
+						Facebook, Wikipedia and Yahoo. In general, there is a trend
+						towards writing an increasing amount of an application in a
+						scripting language rather than in a traditional programming
+						language, not least to avoid the complexity of crossing
+						between languages.
+					</p>
+
+					<p class="research">
+						Despite their increasing popularity, most scripting language
+						implementations remain interpreted. Typically, these
+						implementations are slow, between one and two orders of
+						magnitude slower than C. Improving the performance of
+						scripting language implementations would be of significant
+						benefit, however many of the features of scripting languages
+						make them difficult to compile ahead of time. In this
+						dissertation we argue that ahead-of-time compilation of
+						scripting languages is both possible and valuable.  We
+						present phc, an ahead-of-time compiler for the PHP language.
+						We describe the design and implementation of the compiler,
+						and identify specific challenges in the design of a compiler
+						for a dynamic scripting language.
+					</p>
+
+					<p class="research">
+						We determine that there are three important features of
+						scripting languages that are difficult to compile or
+						reimplement. Since scripting languages are defined primarily
+						through the semantics of their original implementations, they
+						often change semantics between releases. They provide C APIs,
+						used both for foreign-function interfaces and to write
+						third-party extensions. These APIs typically have tight
+						integration with the original implementation, and are used to
+						provide large standard libraries, which are difficult to
+						re-use, and costly to reimplement. Finally, they support
+						run-time code generation. These features make the important
+						goal of correctness difficult to achieve for compilers and
+						reimplementations.
+					</p>
+
+					<p class="research">
+						We present a technique to support these features in our
+						ahead-of-time compiler for PHP. Our technique uses the
+						original PHP implementation through the provided PHP C API,
+						both in our compiler, and in our generated code. We support
+						all of these important scripting language features,
+						particularly focusing on the correctness of compiled
+						programs. Additionally, our approach allows us to
+						automatically support limited future language changes. We
+						present a discussion and performance evaluation of this
+						technique, which we show increases the execution speed of PHP
+						programs by 1.55x in our benchmarks. In order to improve this
+						performance, static analysis and optimization are required.
+					</p>
+
+					<p class="research">
+						However, static analysis of scripting languages such as PHP
+						is difficult due to the features found in these languages.
+						These features include dynamic typing with implicit type
+						conversions, dynamic aliasing, implicit object and array
+						creation, and overloading of simple operators. We find that
+						as a result, simple analysis techniques such as SSA and
+						def-use chains are not straightforward to use, and that a
+						single unconstrained variable can ruin our analysis. We
+						describe the challenging semantics of PHP, and a static
+						analyser to model them. Our analysis combines alias analysis,
+						type-inference and constant-propagation for PHP, computing
+						results that are essential for other analyses and
+						optimizations. Our empirical results show that our analysis
+						is capable of determining that almost all program variables
+						are unaliased, and that dynamic types for over 60% of
+						variables can be statically determined by our analysis.
+					</p>
+
+					<br />
+					<br />
+
+
+
+
+
+
+
+
+
+					<!-- **************************************** -->
+					<!-- Standard CS footer -->
+					<!-- **************************************** -->
+					<hr />
+					<p class="footer">
+						[<a href="https://www.cs.tcd.ie/dept/personnel/">Personnel</a>] 
+						[<a href="https://www.cs.tcd.ie/">Computer Science</a>] 
+						[<a href="https://www.tcd.ie/">Trinity College Dublin</a>]
+
+						<br />
+						$LastChangedDate$.
+					</p>
+
+
+					<!-- **************************************** -->
+					<!-- Close the wrapping table -->
+					<!-- **************************************** -->
+				</td>
+			</tr>
+		</table>
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		try {
+			var pageTracker = _gat._getTracker("UA-6698901-5");
+			pageTracker._trackPageview();
+		} catch(err) {}</script>
+	</body>
+</html>
